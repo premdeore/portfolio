@@ -9,7 +9,6 @@ function App() {
 
   return (
     <React.Fragment>
-         <h1>Portfolio</h1>
          <AppRouter/>
     </React.Fragment>
   )
