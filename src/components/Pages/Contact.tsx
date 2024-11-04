@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
           className="transition transform"
-          whileHover={{ scale: 1.1 }} // Scale up on hover
+          whileHover={{ scale: 1.5 }} // Scale up on hover
         >
           <LinkedInLogoIcon className="w-6 h-6 cursor-pointer text-[#0077B5] hover:text-[#005582] transition-colors duration-300" />
         </motion.a>
@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
           className="transition transform hover:scale-110" // Added hover scale effect
-          whileHover={{ scale: 1.1 }} // Scale up on hover
+          whileHover={{ scale: 1.5 }} // Scale up on hover
         >
           <GitHubLogoIcon
             className="w-6 h-6 cursor-pointer"
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
           rel="noopener noreferrer"
           aria-label="Twitter"
           className="transition transform"
-          whileHover={{ scale: 1.1 }} // Scale up on hover
+          whileHover={{ scale: 1.5 }} // Scale up on hover
         >
           <TwitterLogoIcon className="w-6 h-6 cursor-pointer text-[#1DA1F2] hover:text-[#0A66C2] transition-colors duration-300" />
         </motion.a>
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
           rel="noopener noreferrer"
           aria-label="LeetCode"
           className="transition transform"
-          whileHover={{ scale: 1.1 }} // Scale up on hover
+          whileHover={{ scale: 1.5 }} // Scale up on hover
         >
           <img
             src={LeetcodeIcon}
