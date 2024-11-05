@@ -16,9 +16,6 @@ import NestJsLogo from "../../assets/images/nestjsLogo.png";
 import NextJsLogo from "../../assets/images/nextjsLogo.png";
 import DockerLogo from "../../assets/images/dockerLogo.png";
 
-
-
-
 const About: React.FC = () => {
   //  const skills = ["HTML","CSS","ReactJs","NodeJs","NestJs","MongoDB","Tailwind CSS"]
   const skills = [
@@ -38,49 +35,37 @@ const About: React.FC = () => {
     { skill: "NestJs", url: NestJsLogo },
     { skill: "MongoDB", url: mongoDBlogo },
     { skill: "Docker", url: DockerLogo },
-
   ];
 
   return (
+    <>
     <div className="container mx-auto p-4 mt-12">
-  <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4">
-    {skills.map((items, index) => (
-      <div
-        key={index}
-        className=" text-white p-6 flex flex-col items-center justify-center rounded shadow-md"
-      >
-        <img
-          src={items.url}
-          alt={items.skill}
-          className="w-3/4 md:w-2/3 lg:w-1/2 mb-2"
-        />
-        <p className="text-center text-black">{items.skill}</p>
-      </div>
-    ))}
-  </div>
-</div>
+    <h2 className="font-bold flex items-end text-2xl underline">Experience</h2>
+    <div>
 
+    </div>
+    </div>
+    <div className="container mx-auto p-4 mt-12">
+    <h2 className="font-bold flex items-end text-2xl underline">Skills</h2>
+      <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
+        {skills.map((items, index) => (
+          <div
+            key={index}
+            className=" text-white p-6 flex flex-col items-center justify-center rounded shadow-md"
+          >
+            <img
+              src={items.url}
+              alt={items.skill}
+              className="w-3/4 md:w-2/3 lg:w-1/2 mb-2"
+            />
+            <p className="text-center text-black">{items.skill}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    </>
   );
 };
 
 export default About;
 
-      // <div className="container mx-auto p-4 mt-12">
-      //   <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4">
-      //     {skills.map((items, index) => (
-      //       <>
-      //         <div
-      //           key={index}
-      //           className=" text-white p-6 flex items-center justify-center rounded shadow-md"
-      //         >
-      //           <img
-      //             src={items.url}
-      //             alt={items.skill}
-      //             className="w-3/4 md:w-2/3 lg:w-1/2"
-      //           />
-      //           <p>{items.skill}</p>
-      //         </div>
-      //       </>
-      //     ))}
-      //   </div>
-      // </div>
