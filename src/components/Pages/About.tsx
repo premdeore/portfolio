@@ -17,10 +17,10 @@ import NextJsLogo from "../../assets/images/nextjsLogo.png";
 import DockerLogo from "../../assets/images/dockerLogo.png";
 import jestLogo from "../../assets/images/jestLogo.png";
 import awsLogo from "../../assets/images/AWSLogo.png";
-
+import { motion } from "framer-motion";
+import Timeline from "./Timeline";
 
 const About: React.FC = () => {
-  //  const skills = ["HTML","CSS","ReactJs","NodeJs","NestJs","MongoDB","Tailwind CSS"]
   const skills = [
     { skill: "HTML", url: HTMLLogo },
     { skill: "CSS", url: CSSLogo },
@@ -40,38 +40,42 @@ const About: React.FC = () => {
     { skill: "MongoDB", url: mongoDBlogo },
     { skill: "Docker", url: DockerLogo },
     { skill: "AWS", url: awsLogo },
-
   ];
 
   return (
     <>
-    <div className="container mx-auto p-4 mt-12">
-    <h2 className="font-bold flex items-end text-2xl underline">Experience</h2>
-    <div>
-
-    </div>
-    </div>
-    <div className="container mx-auto p-4 mt-12">
-    <h2 className="font-bold flex items-end text-2xl underline">Skills</h2>
-      <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
-        {skills.map((items, index) => (
-          <div
-            key={index}
-            className=" text-white p-6 flex flex-col items-center justify-center rounded shadow-md"
-          >
-            <img
-              src={items.url}
-              alt={items.skill}
-              className="w-3/4 md:w-2/3 lg:w-1/2 mb-2"
-            />
-            <p className="text-center text-black">{items.skill}</p>
-          </div>
-        ))}
+      <div className="container mx-auto p-4 mt-5">
+        <h2 className="font-bold flex items-end text-2xl underline">
+          About
+        </h2>
+        
+          <Timeline/>
+        
       </div>
-    </div>
+      <div className="container mx-auto p-4 mt-2">
+        <h2 className="font-bold flex items-end text-2xl underline">Skills</h2>
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4">
+          {skills.map((items, index) => (
+            <motion.div
+              key={index}
+              className="text-white p-6 flex flex-col items-center justify-center rounded shadow-md"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.1 }}
+            >
+              <img
+                src={items.url}
+                alt={items.skill}
+                className="w-3/4 md:w-2/3 lg:w-1/2 mb-2"
+              />
+              <p className="text-center text-black">{items.skill}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
 
 export default About;
-
