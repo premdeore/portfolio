@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const Contact: React.FC = () => {
   return (
     <div className="p-9 text-center space-y-5">
-      <div className="flex items-center justify-center space-x-6">
+      <div className="flex items-center justify-center space-x-12">
         <motion.a
           href="https://www.linkedin.com/in/premraj-deore-34a93314a/"
           target="_blank"
