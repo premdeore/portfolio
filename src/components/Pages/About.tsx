@@ -15,6 +15,9 @@ import mongoDBlogo from "../../assets/images/MongodbLogo.png";
 import NestJsLogo from "../../assets/images/nestjsLogo.png";
 import NextJsLogo from "../../assets/images/nextjsLogo.png";
 import DockerLogo from "../../assets/images/dockerLogo.png";
+import jestLogo from "../../assets/images/jestLogo.png";
+import awsLogo from "../../assets/images/AWSLogo.png";
+
 
 const About: React.FC = () => {
   //  const skills = ["HTML","CSS","ReactJs","NodeJs","NestJs","MongoDB","Tailwind CSS"]
@@ -31,10 +34,13 @@ const About: React.FC = () => {
     { skill: "Tailwind-CSS", url: TailwindCSS },
     { skill: "github", url: github },
     { skill: "Version-Control", url: versionControl },
+    { skill: "Jest", url: jestLogo },
     { skill: "NodeJs", url: nodeLogo },
     { skill: "NestJs", url: NestJsLogo },
     { skill: "MongoDB", url: mongoDBlogo },
     { skill: "Docker", url: DockerLogo },
+    { skill: "AWS", url: awsLogo },
+
   ];
 
   return (
