@@ -131,13 +131,13 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ projects }) => {
   {/* Next Button */}
   <button
     onClick={handleNext}
-    className="p-2 bg-gradient-to-r text-white rounded-full shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-indigo-300"
+    className="p-2 bg-gradient-to-r text-white bg-white rounded-full shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-indigo-300"
     aria-label="Next"
   >
     <img
       src={nextbtn}
       alt="Next button logo"
-      className="w-10 h-10 border border-black rounded-full object-contain"
+      className="w-10 h-10 border border-black bg-white rounded-full object-contain"
     />
   </button>
 </div>
