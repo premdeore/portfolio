@@ -11,7 +11,7 @@ import MaterialUI from "../../assets/images/MaterialUILogo.png";
 import TailwindCSS from "../../assets/images/tailwindCssLogo.png";
 import github from "../../assets/images/githubLogo.png";
 import versionControl from "../../assets/images/gitVersionControlLogo.png";
-import mongoDBlogo from "../../assets/images/MongodbLogo.png";
+import mongoDBlogo from "../../assets/images/MongoDBLogo.png";
 import NestJsLogo from "../../assets/images/nestjsLogo.png";
 import NextJsLogo from "../../assets/images/nextjsLogo.png";
 import DockerLogo from "../../assets/images/dockerLogo.png";
