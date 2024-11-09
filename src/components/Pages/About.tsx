@@ -16,7 +16,7 @@ import NestJsLogo from "../../assets/images/nestjsLogo.png";
 import NextJsLogo from "../../assets/images/nextjsLogo.png";
 import DockerLogo from "../../assets/images/dockerLogo.png";
 import jestLogo from "../../assets/images/jestLogo.png";
-import awsLogo from "../../assets/images/AWSLogo.png";
+// import awsLogo from "../../assets/images/AWSLogo.png";
 import { motion } from "framer-motion";
 import Timeline from "./Timeline";
 
@@ -39,7 +39,7 @@ const About: React.FC = () => {
     { skill: "NestJs", url: NestJsLogo },
     { skill: "MongoDB", url: mongoDBlogo },
     { skill: "Docker", url: DockerLogo },
-    { skill: "AWS", url: awsLogo },
+    // { skill: "AWS", url: awsLogo },
   ];
 
   return (
