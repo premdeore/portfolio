@@ -46,7 +46,7 @@ const Navbar:React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={handleToggle}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none"
+              className="text-gray-600 bg-white hover:text-gray-900 focus:outline-none"
             >
               {/* Hamburger Icon */}
               <svg
