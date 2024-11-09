@@ -45,13 +45,13 @@ const About: React.FC = () => {
   return (
     <>
       <div className="container mx-auto p-4 mt-5">
-        <h1 className="font-bold flex items-end text-2xl underline justify-center text-4xl mt-4 ">
+        <h1 className="font-bold flex items-end text-black underline justify-center text-4xl mt-4 ">
           About
         </h1>
           <Timeline/>
       </div>
       <div className="container mx-auto p-4 mt-2">
-        <h1 className="flex items-center font-bold underline text-4xl justify-center">Skills</h1>
+        <h1 className="flex items-center font-bold underline text-black text-4xl justify-center">Skills</h1>
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 mt-7">
           {skills.map((items, index) => (
             <motion.div

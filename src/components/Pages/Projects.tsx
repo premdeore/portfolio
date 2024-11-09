@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
   return (
     <>
       <div className="container mx-auto p-6 mt-5">
-        <h1 className="font-bold text-center mb-8 underline text-4xl mt-3">
+        <h1 className="font-bold text-black text-center mb-8 underline text-4xl mt-3">
           Projects
         </h1>
         <CustomCarousel projects={projectsData} />
