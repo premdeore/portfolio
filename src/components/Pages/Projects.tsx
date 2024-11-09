@@ -1,20 +1,24 @@
 import React from "react";
 import CustomCarousel from "./CustomCarousel";
+import newsPortal from "../../assets/images/newsportal.png";
+import clockIt from "../../assets/images/clockIt.png";
 
 const projectsData = [
   {
     id: 1,
-    title: "Project One",
-    description: "Description for project one.",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjRWCRtytQf1MSgxvVtpbPaX-AZN1ScGU8Q&s",
+    title: "Clock-It",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste tempore molestiae cupiditate nesciunt odio quaerat voluptatibus minus assumenda error?",
+    imageUrl: `${clockIt}`,
+    githubUrl: "https://github.com/premdeore/Clock-It",
+    siteUrl:"https://premrajdeore27.github.io/Clock_Project/"
   },
   {
     id: 2,
-    title: "Project Two",
+    title: "News Portal",
     description: "Description for project two.",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
+    imageUrl:`${newsPortal}`,
+    githubUrl: "https://github.com/premdeore/NewsBlogApp",
+    siteUrl:"https://eager-ritchie-5a9584.netlify.app/home"
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const projectsData = [
     description: "Description for project three.",
     imageUrl:
       "https://www.projectstoday.com/images/PTHomePage2023/unlockImg-4.jpg",
+    githubUrl: "",
+    siteUrl:""
   },
   {
     id: 4,
@@ -29,6 +35,8 @@ const projectsData = [
     description: "Description for project four.",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDu_A4GNMCGrX6wW78z69-g6zBIhag5ThjSw&s",
+    githubUrl: "",
+    siteUrl:""
   },
 ];
 
