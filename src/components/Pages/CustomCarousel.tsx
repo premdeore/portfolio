@@ -55,7 +55,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ projects }) => {
   {visibleProjects.map((project) => (
     <div
       key={project.id}
-      className="relative flex flex-col justify-between h-[450px] w-full md:w-1/2 p-4 bg-white rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+      className="relative flex flex-col justify-between h-[450px] w-full md:w-1/2 p-2 border-2 bg-white rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
     >
       {/* Content Container */}
       <div className="flex-grow flex flex-col items-center">
@@ -125,6 +125,8 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ projects }) => {
         </button>
       </div>
 </div>
+
+
 
 
   );
