@@ -1,15 +1,13 @@
-
-
 import React from "react";
 import { motion } from "framer-motion";
 
 const experiences = [
-    {
-        year: "Aug 2016 - Oct 2020",
-        title: "Electronics and Telecommunication Engineering",
-        company: "SSVPS BSD COE Dhule",
-        description: "Bachelor of Engineering, graduated in 2020.",
-      },
+  {
+    year: "Aug 2016 - Oct 2020",
+    title: "Electronics and Telecommunication Engineering",
+    company: "SSVPS BSD COE Dhule",
+    description: "Bachelor of Engineering, graduated in 2020.",
+  },
   {
     year: "July 2021 - June 2022",
     title: "junior Software Developer",
@@ -22,12 +20,12 @@ const experiences = [
     company: "BrainerHub Solutions",
     description: "write a code and mentor 2-3 juniors",
   },
-  {
-    year: "Nov 2024",
-    title: "Software Development Senior Analyst",
-    company: "Accenture",
-    description: "Led scalable web app development.",
-  },
+  // {
+  //   year: "Nov 2024",
+  //   title: "Software Development Senior Analyst",
+  //   company: "Accenture",
+  //   description: "Led scalable web app development.",
+  // },
 ];
 
 const Timeline: React.FC = () => {
