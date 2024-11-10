@@ -19,6 +19,7 @@ import jestLogo from "../../assets/images/jestLogo.png";
 import awsLogo from "../../assets/images/AWSLogo.png";
 import { motion } from "framer-motion";
 import Timeline from "./Timeline";
+import AwardsSection from "./AwardsSection";
 
 const About: React.FC = () => {
   const skills = [
@@ -42,6 +43,7 @@ const About: React.FC = () => {
     { skill: "AWS", url: awsLogo },
   ];
 
+
   return (
     <>
       <div className="container mx-auto p-4 mt-5">
@@ -50,6 +52,9 @@ const About: React.FC = () => {
         </h1>
           <Timeline/>
       </div>
+      <AwardsSection/>
+      {/* <div className="container mx-auto p-4 mt-5">
+      </div> */}
       <div className="container mx-auto p-4 mt-2">
         <h1 className="flex items-center font-bold underline text-black text-4xl justify-center">Skills</h1>
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 mt-7">
